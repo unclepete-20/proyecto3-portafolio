@@ -1,11 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./index.sass"
+import { ChakraProvider } from "@chakra-ui/react"
 import App from "./App.jsx"
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ChakraProvider>
     <App />
-  </React.StrictMode>,
+  </ChakraProvider>,
   document.getElementById("app")
 )
