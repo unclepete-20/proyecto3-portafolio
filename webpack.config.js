@@ -9,7 +9,7 @@ module.exports = {
   // Name and path of output file
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "ARR20188Calculadora")
+    path: path.resolve(__dirname, "ARR20188")
   },
   // Loaders for different file types
   plugins: [
