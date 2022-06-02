@@ -14,7 +14,7 @@ import {
 import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 
-export default function ExperienceCard(props) {
+export default function ProjectCard(props) {
   // eslint-disable-next-line no-unused-vars
   const { colorMode, toggleColorMode } = useColorMode()
   const { image, colorScheme, badge, title, subtitle, url } = props
@@ -51,7 +51,7 @@ export default function ExperienceCard(props) {
               size="sm"
               onClick={() => window.open(url)}
             >
-              Learn More
+              Repository
             </Button>
           </Flex>
         </Box>
@@ -59,7 +59,7 @@ export default function ExperienceCard(props) {
   )
 }
 
-ExperienceCard.propTypes = {
+ProjectCard.propTypes = {
     image: PropTypes.string.isRequired,
     colorScheme: PropTypes.string.isRequired,
     badge: PropTypes.string.isRequired,
